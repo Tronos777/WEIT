@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корпоративные принципы WEIT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .image-container {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            overflow: hidden;
+            display: inline-block;
+            max-width: 100%;
+        }
+        
+        .responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .mobile-message {
+            display: none;
+            background: #00A2FF;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-message {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="weit-principles.png" alt="Корпоративные принципы WEIT" class="responsive-image">
+        </div>
+        <div class="mobile-message">
+            💡 Для лучшего просмотра можно приблизить изображение жестом "щипок" на мобильном устройстве
+        </div>
+    </div>
+</body>
+</html>
